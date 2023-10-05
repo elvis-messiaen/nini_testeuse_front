@@ -1,0 +1,60 @@
+
+  [
+    {
+      "id": 1,
+      "title": "T-shirt 1",
+      "description": "T-shirt en coton",
+      "image": ["https://picsum.photos/200/300"],
+      "category":  "ALIMENTATION"
+    },
+    {
+      "id": 2,
+      "title": "T-shirt 2",
+      "description": "T-shirt en coton",
+      "image": ["https://picsum.photos/200/300"],
+      "category": "MAINS"
+    },
+    {
+      "id": 3,
+      "title": "T-shirt 3",
+      "description": "T-shirt en coton",
+      "image": ["https://picsum.photos/200/300"],
+      "category": "MAINS"
+    },
+    {
+      "id": 4,
+      "title": "T-shirt 4",
+      "description": "T-shirt en coton",
+      "image": ["https://picsum.photos/200/300"],
+      "category":  "ALIMENTATION"
+    },
+    {
+      "id": 5,
+      "title": "T-shirt 5",
+      "description": "T-shirt en coton",
+      "image": ["https://picsum.photos/200/300"],
+      "category":  "ALIMENTATION"
+    },
+    {
+      "id": 6,
+      "title": "T-shirt 6",
+      "description": "T-shirt en coton",
+      "image": ["https://picsum.photos/200/300"],
+      "category": "MAINS"
+    },
+    {
+      "id": 7,
+      "title": "T-shirt 7",
+      "description": "T-shirt en coton",
+      "image": ["https://picsum.photos/200/300"],
+      "category": "MAINS"
+    },
+    {
+      "id": 8,
+      "title": "T-shirt 8",
+      "description": "T-shirt en coton",
+      "image": ["https://picsum.photos/200/300"],
+      "category": "MAINS"
+    }
+  ]
+

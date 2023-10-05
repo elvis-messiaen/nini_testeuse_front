@@ -1,1 +1,10 @@
-<p>detail-produit works!</p>
+<div class="container" *ngIf="card$ | async as cardSingle">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{cardSingle.title | uppercase}}</h5>
+      <p class="card-text descrition">{{cardSingle.description}}</p>
+      <p class="card-text">Catégorie : {{cardSingle.category}}</p>
+      <img class="size_picture_presentation" src="{{cardSingle.image}}" alt="{{cardSingle.title}}">
+    </div>
+  </div>
+</div>

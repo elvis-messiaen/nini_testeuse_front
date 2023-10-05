@@ -1,0 +1,4 @@
+<h2 class="d-flex pt-5 justify-content-center titre_des_categories">ALIMENTATION</h2>
+<div class="container pt-5" >
+  <app-card-produit *ngFor="let card of cards | async" [card]="card"></app-card-produit>
+</div>

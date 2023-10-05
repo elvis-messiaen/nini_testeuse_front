@@ -1,1 +1,71 @@
-<p>header works!</p>
+<nav class="navbar">
+  <div class="d-flex">
+    <img src="assets/Logo.png" class="size" alt="Logo">
+    <div class="titreLogo p-2">Nini Testeuse</div>
+  </div>
+    <div class="d-flex justify-content-end marg">
+      <form class="d-flex" role="search">
+        <input class="form-control largueur" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light p-2" type="submit">Search</button>
+      </form>
+    </div>
+</nav>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle p-2 drop" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <mat-icon class="p-2"> dehaze</mat-icon>
+            Catégories
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="alimentations" routerLinkActive="active">
+              <img src="assets/Logo/dog-food-pet-svgrepo-com.svg" class="size_drop m-2" alt="Logo">Alimentation</a></li>
+            <li>
+              <a class="dropdown-item" routerLink="parfums" routerLinkActive="active">
+                <img src="assets/Logo/perfume_1890693.png" class="size_drop m-2" alt="Logo">Parfums</a></li>
+            <li><a class="dropdown-item" routerLink="chien" routerLinkActive="active">
+              <img src="assets/Logo/dog-food-pet-svgrepo-com.svg" class="size_drop m-2" alt="Logo">Nourriture pour chats</a></li>
+            <li><a class="dropdown-item" routerLink="froid" routerLinkActive="active">
+              <img src="assets/Logo/iced-coffee-cold-drink-svgrepo-com.svg" class="size_drop m-2" alt="Logo">Boissons froides</a></li>
+            <li><a class="dropdown-item" routerLink="chaud" routerLinkActive="active">
+              <img src="assets/Logo/hot-drink-mug-svgrepo-com.svg" class="size_drop m-2" alt="Logo">Boissons chaude</a></li>
+            <li><a class="dropdown-item" routerLink="mains">
+              <img src="assets/Logo/hand-wash-svgrepo-com.svg" class="size_drop m-2" alt="Logo">Produits pour les mains</a></li>
+            <li><a class="dropdown-item" routerLink="cheveux" routerLinkActive="active">
+              <img src="assets/Logo/woman-hair-beauty-svgrepo-com.svg" class="size_drop m-2" alt="Logo">Produits pour les cheveux</a></li>
+            <li><a class="dropdown-item" routerLink="visage">
+              <img src="assets/Logo/cosmetics-ointment-svgrepo-com.svg" class="size_drop m-2" alt="Logo">Produits pour le visage</a></li>
+            <li><a class="dropdown-item" routerLink="menage" routerLinkActive="active">
+              <img src="assets/Logo/cleaner-svgrepo-com.svg" class="size_drop m-2" alt="Logo">Produits ménagés</a></li>
+            <li><a class="dropdown-item" routerLink="confiseries" routerLinkActive="active">
+              <img src="assets/Logo/candy-svgrepo-com.svg" class="size_drop m-2" alt="Logo">Confiseries</a></li>
+            <li><a class="dropdown-item" routerLink="appareils" routerLinkActive="active">
+              <img src="assets/Logo/appliances-cooking-furniture-svgrepo-com.svg" class="size_drop m-2" alt="Logo">Appareils electriques</a></li>
+          </ul>
+        </li>
+      </ul>
+      <div class="d-flex container justify-content-between ">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="blog" routerLinkActive="active">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="apropos" routerLinkActive="active">A propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact" routerLinkActive="active">Nos contacter</a>
+        </li>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+

@@ -1,0 +1,32 @@
+.contaiForm{
+  height: calc(100vh - 400px);
+  padding-top: 50px;
+}
+.form-newsletter{
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+.form-newsletter label{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #333;
+    padding-bottom: 25px;
+}
+
+.form-newsletter input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+button{
+  background-color:limegreen;
+}

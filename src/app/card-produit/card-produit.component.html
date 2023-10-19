@@ -1,15 +1,13 @@
-<div class="d-flex justify-content-between flex-wrap">
-  <div class="card mb-5 ">
-    <div>
-      <img src="{{card.image}}" class="img-thumbnail size" alt="{{card.title}}">
+ <div class="d-flex justify-content-between flex-wrap boite">
+    <div class="">
+      <img src="{{card.image[0]}}" class="size" alt="{{card.title}}">
       <p class="m-2">{{ birthdate | date: "dd MMMM" }}</p>
     </div>
-    <div class="card-body">
+    <div >
       <h2 class="card-title text-center">{{card.title}}</h2>
-      <p class="card-text">{{card.description}}</p>
+      <p class="card-text description">{{card.description}}</p>
       <p class="card-text">Catégorie : {{card.category}}</p>
       <a routerLink="/detailproduit" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="detailproduit" class="btn btn-secondary" (click)="handClickId()">Découvrir</a>
     </div>
   </div>
-</div>
 

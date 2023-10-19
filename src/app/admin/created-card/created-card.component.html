@@ -1,0 +1,59 @@
+<div class="form-card">
+  <h2 class="d-flex pt-5 justify-content-center titre_des_categories">Nouvelle Card</h2>
+  <form [formGroup]="cardForm">
+    <div class="form-group">
+      <label for="title">Titre</label>
+      <input id="title" type="text" formControlName="title"/>
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea id="description" type="text" formControlName="description">
+      </textarea>
+    </div>
+    <div class="form-group">
+      <label for="image">Image</label>
+      <input id="image" type="text" formControlName="image"/>
+    </div>
+
+
+
+    <div class="form-group">
+      <label for="category">Categories</label>
+      <select class="selection" id="category" formControlName="category">
+        <option >Sélectionnez une catégorie</option>
+        <option value="ALIMENTATION">ALIMENTATION</option>
+        <option value="MAINS">MAINS</option>
+        <option value="CHEVEUX">CHEVEUX</option>
+        <option value="VISAGE">VISAGE</option>
+        <option value="CORPS">CORPS</option>
+        <option value="PARFUMS">PARFUMS</option>
+        <option value="CHATS">CHATS</option>
+        <option value="CHIENS">CHIENS</option>
+        <option value="CHAUDE">CHAUDE</option>
+        <option value="FROIDE">FROIDE</option>
+        <option value="MENAGE">MENAGE</option>
+        <option value="CONFISERIES">CONFISERIES</option>
+        <option value="APPAREILS">APPAREILS</option>
+      </select>
+    </div>
+    <div class="action-buttons">
+      <button type="submit" (click)="onSubmitForm()" >Ajouter une card</button>
+    </div>
+  </form>
+</div>
+<div class="card-previous" *ngIf="cardPrevious$ | async as cardViews">
+  <div class="d-flex justify-content-between flex-wrap boite">
+    <div class="">
+      <img [src]="cardViews.image" [alt]="cardViews.title">
+    </div>
+    <div >
+      <h2 class="card-title text-center">{{cardViews.title}}</h2>
+      <p class="card-text description">{{cardViews.description}}</p>
+      <p class="card-text">Catégorie : {{cardViews.category}}</p>
+    </div>
+  </div>
+</div>
+
+
+
+

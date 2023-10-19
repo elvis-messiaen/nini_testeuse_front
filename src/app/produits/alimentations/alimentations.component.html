@@ -1,0 +1,5 @@
+<h2 class="d-flex pt-5 justify-content-center titre_des_categories">ALIMENTATION</h2>
+<app-loading *ngIf="!isLoading"></app-loading>
+<div *ngIf="isLoading" class="container pt-5" >
+  <app-card-produit *ngFor="let card of cardCategory" [card]="card"></app-card-produit >
+</div>

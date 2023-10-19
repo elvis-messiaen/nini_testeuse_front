@@ -1,9 +1,10 @@
 import {Categories} from "../categories";
+import {Category} from "./enum/category";
 
 export interface Card {
   id: number;
   title: string;
   description: string;
   image: string [];
-  category: string;
+  category: Category;
 }

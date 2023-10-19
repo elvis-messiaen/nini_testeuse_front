@@ -14,23 +14,30 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from "@angular/material/icon";
 import { HomeComponent } from './home/home.component';
-import { AlimentationsComponent } from './alimentations/alimentations.component';
-import { ParfumsComponent } from './parfums/parfums.component';
-import { ChatComponent } from './chat/chat.component';
-import { FroideComponent } from './froide/froide.component';
-import { ChaudComponent } from './chaud/chaud.component';
-import { MainsComponent } from './mains/mains.component';
-import { VisageComponent } from './visage/visage.component';
-import { CheveuxComponent } from './cheveux/cheveux.component';
-import { MenageComponent } from './menage/menage.component';
-import { ConfiseriesComponent } from './confiseries/confiseries.component';
-import { AppareilsComponent } from './appareils/appareils.component';
-import { HistoireComponent } from './componets/histoire/histoire.component';
-import { PresentationComponent } from './componets/presentation/presentation.component';
-import { CategorieComponent } from './componets/categorie/categorie.component';
+import { AlimentationsComponent } from './produits/alimentations/alimentations.component';
+import { ParfumsComponent } from './produits/parfums/parfums.component';
+import { ChatComponent } from './produits/chat/chat.component';
+import { FroideComponent } from './produits/froide/froide.component';
+import { ChaudComponent } from './produits/chaud/chaud.component';
+import { MainsComponent } from './produits/mains/mains.component';
+import { VisageComponent } from './produits/visage/visage.component';
+import { CheveuxComponent } from './produits/cheveux/cheveux.component';
+import { MenageComponent } from './produits/menage/menage.component';
+import { ConfiseriesComponent } from './produits/confiseries/confiseries.component';
+import { AppareilsComponent } from './produits/appareils/appareils.component';
+import { HistoireComponent } from './components/histoire/histoire.component';
+import { PresentationComponent } from './components/presentation/presentation.component';
+import { CategorieComponent } from './components/categorie/categorie.component';
 import {HttpClient, HttpClientModule} from "@angular/common/http";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { NewsletterComponent } from './enchangeClient/newsletter/newsletter.component';
+import { CreatedCardComponent } from './admin/created-card/created-card.component';
+import { LoadingComponent } from './loading/loading.component';
+import { QualiteComponent } from './components/test/qualite/qualite.component';
+import { PackagingComponent } from './components/test/packaging/packaging.component';
+import { GoutComponent } from './components/test/gout/gout.component';
+import { EfficaciteComponent } from './components/test/efficacite/efficacite.component';
+import { PrixComponent } from './components/test/prix/prix.component';
 
 @NgModule({
   declarations: [
@@ -59,7 +66,14 @@ import { NewsletterComponent } from './enchangeClient/newsletter/newsletter.comp
     HistoireComponent,
     PresentationComponent,
     CategorieComponent,
-    NewsletterComponent
+    NewsletterComponent,
+    CreatedCardComponent,
+    LoadingComponent,
+    QualiteComponent,
+    PackagingComponent,
+    GoutComponent,
+    EfficaciteComponent,
+    PrixComponent
   ],
     imports: [
         BrowserModule,
@@ -67,7 +81,8 @@ import { NewsletterComponent } from './enchangeClient/newsletter/newsletter.comp
         BrowserAnimationsModule,
         MatIconModule,
         HttpClientModule,
-        FormsModule
+        FormsModule,
+        ReactiveFormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]

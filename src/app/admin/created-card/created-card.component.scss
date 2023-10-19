@@ -1,0 +1,79 @@
+h2{
+  color: limegreen;
+  font-size: 2rem;
+  align-items: center;
+}
+.form-group {
+  margin: 10px auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input, textarea {
+  width: 50%;
+}
+
+.action-buttons {
+  width: 100%;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+}
+
+.form-card, .card-previous {
+  box-sizing: border-box;
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+}
+
+.imageCard {
+  img {
+    width: 100%;
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+  p {
+    font-weight: 300;
+    font-size: 16px;
+  }
+}
+
+.size {
+  width: 600px;
+  height: 75%;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.description {
+  max-width: 550px;
+}
+
+.boite{
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.selection{
+  width: 50%;
+  height: 30px;
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+

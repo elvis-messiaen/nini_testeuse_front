@@ -20,18 +20,5 @@
       </div>
     </div>
   </div>
-  <div class="container infos-test">
-    <div>
-      <ul class="d-flex buttonTest">
-        <li><a routerLink="qualite">Qualité</a></li>
-        <li><a routerLink="gout">Goût</a></li>
-        <li><a routerLink="packaging">Packaging</a></li>
-        <li><a routerLink="prix">Prix</a></li>
-        <li><a routerLink="efficacite">Efficacité</a></li>
-      </ul>
-    </div>
-    <div class="">
-      <router-outlet></router-outlet>
-    </div>
-  </div>
+  <app-test-details [card]="cardSingle"></app-test-details>
 </div>

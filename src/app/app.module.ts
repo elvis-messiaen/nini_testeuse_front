@@ -13,7 +13,7 @@ import { AProposDeNousComponent } from './a-propos-de-nous/a-propos-de-nous.comp
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatIconModule} from "@angular/material/icon";
-import { HomeComponent } from './home/home.component';
+import { HomeComponent } from './components/home/home.component';
 import { AlimentationsComponent } from './produits/alimentations/alimentations.component';
 import { ParfumsComponent } from './produits/parfums/parfums.component';
 import { ChatComponent } from './produits/chat/chat.component';
@@ -38,6 +38,8 @@ import { PackagingComponent } from './components/test/packaging/packaging.compon
 import { GoutComponent } from './components/test/gout/gout.component';
 import { EfficaciteComponent } from './components/test/efficacite/efficacite.component';
 import { PrixComponent } from './components/test/prix/prix.component';
+import { TestDetailsComponent } from './components/test/test-details/test-details.component';
+import {MatButtonToggleModule} from "@angular/material/button-toggle";
 
 @NgModule({
   declarations: [
@@ -73,7 +75,8 @@ import { PrixComponent } from './components/test/prix/prix.component';
     PackagingComponent,
     GoutComponent,
     EfficaciteComponent,
-    PrixComponent
+    PrixComponent,
+    TestDetailsComponent
   ],
     imports: [
         BrowserModule,
@@ -82,7 +85,8 @@ import { PrixComponent } from './components/test/prix/prix.component';
         MatIconModule,
         HttpClientModule,
         FormsModule,
-        ReactiveFormsModule
+        ReactiveFormsModule,
+        MatButtonToggleModule
     ],
   providers: [],
   bootstrap: [AppComponent]

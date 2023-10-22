@@ -7,4 +7,9 @@ export interface Card {
   description: string;
   image: string [];
   category: Category;
+  qualite?: string;
+  gout?: string;
+  packaging?: string;
+  prix?: string;
+  efficacite?: string;
 }

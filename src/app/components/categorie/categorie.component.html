@@ -1,8 +1,33 @@
-<div routerLink="/detailproduit" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="detailproduit" class="card mb-5" style="width: 18rem;">
-  <div>
-    <img src="https://dummyimage.com/300" class="img-thumbnail" alt="Image du produit">
+<div class="sizeCard">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img [src]="slide[0].image" class=" w-100" alt="sli.title">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>{{slide[0].nom}}</h5>
+          <p>{{slide[0].description}}</p>
+          <button routerLink="/{{slide[0].categorie}}">Plus</button>
+        </div>
+      </div>
+      <div   *ngFor="let sli of slide;let i = index" class="carousel-item" data-bs-interval="5000">
+        <img [src]="sli.image" class=" w-100" alt="sli.title">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>{{sli.nom}}</h5>
+          <p>{{sli.description}}</p>
+          <button routerLink="/{{slide[i].categorie}}"> Plus</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
-  <div class="card-body">
-    <h2 class="card-title text-center">Titre</h2>
-  </div>
+
+
+
 </div>

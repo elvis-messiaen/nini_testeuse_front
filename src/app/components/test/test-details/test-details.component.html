@@ -1,0 +1,14 @@
+<div >
+  <div>
+    <ul class="d-flex buttonTest">
+      <li><a routerLink="qualite" routerLinkActive="active">Qualité</a></li>
+      <li *ngIf="card?.gout"><a routerLink="gout" routerLinkActive="active">Goût</a></li>
+      <li><a routerLink="packaging" routerLinkActive="active">Packaging</a></li>
+      <li><a routerLink="prix" routerLinkActive="active">Prix</a></li>
+      <li *ngIf="card?.efficacite"><a routerLink="efficacite" routerLinkActive="active">Efficacité</a></li>
+    </ul>
+  </div>
+  <div class="infos_test">
+    <router-outlet (activate)="changeDetail($event)"></router-outlet>
+  </div>
+</div>

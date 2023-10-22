@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {CardBlogComponent} from "./card-blog/card-blog.component";
-import {HomeComponent} from "./home/home.component";
+import {HomeComponent} from "./components/home/home.component";
 import {AProposDeNousComponent} from "./a-propos-de-nous/a-propos-de-nous.component";
 import {ContactComponent} from "./enchangeClient/contact/contact.component";
 import {AlimentationsComponent} from "./produits/alimentations/alimentations.component";
@@ -26,7 +26,8 @@ import {PrixComponent} from "./components/test/prix/prix.component";
 import {EfficaciteComponent} from "./components/test/efficacite/efficacite.component";
 
 const routes: Routes = [
-  {path: 'detailproduit', component: DetailProduitComponent,
+  {path: 'detailproduit', component: DetailProduitComponent},
+  {path: 'products/:id', component: DetailProduitComponent,
     children: [
       {path: '', redirectTo: 'qualite', pathMatch: 'prefix'},
       {path: 'qualite',component: QualiteComponent},
@@ -35,6 +36,7 @@ const routes: Routes = [
       {path: 'prix',component: PrixComponent},
       {path: 'efficacite',component: EfficaciteComponent}]
   },
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'blog', component: CardBlogComponent},
   {path: 'apropos', component: AProposDeNousComponent},

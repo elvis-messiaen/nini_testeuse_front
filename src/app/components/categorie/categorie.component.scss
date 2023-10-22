@@ -1,0 +1,63 @@
+.sizeCard{
+  width: 100%;
+  height: 75vh;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.75);
+  transition: all 0.5s ease;
+  padding: 0 15px;
+  margin-bottom: 100px ;
+}
+.div-item{
+  flex-direction: column;
+  cursor: pointer;
+}
+.title{
+  margin-bottom: 20px;
+}
+
+.carousel-inner img {
+  margin-top: 25px;
+  background-color: white;
+  max-height: 70vh;
+}
+
+.carousel-inner h5{
+  font-size: 2rem;
+  color: limegreen;
+}
+
+.carousel-inner p{
+  font-size: 1.5rem;
+  color: limegreen;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  border-radius: 50%;
+  carousel-indicator-width: 30px;
+}
+
+.carousel-item button  {
+  text-decoration: none;
+  margin: 10px 10px;
+  padding: 1em 2em;
+  border: none;
+  border-radius: .5rem;
+  color: limegreen;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: .2rem;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+}
+
+
+
+
+
+
